@@ -20,6 +20,10 @@ echo 'Deploying'
   }
  
  }
- 
+post {
+ success {
+ archiveArtifacts artifacts: '*', fingerprint: true
+ }
+ }
   
 }
